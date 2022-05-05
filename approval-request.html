@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/images/favicon.png" type="image/png" rel="icon">
+    <title>Approval Request | Immigrant Dashboard</title>
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style-dashboard.css?=0.1">
+
+    <!-- jQuery Files -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link href="assets/css/sf-pro-fonts.css?family=sf-pro:400,500,700&display=swap" rel="stylesheet" />
+
+    <!-- Fonts Icons -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/solid.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <script src="assets/js/aos.js"></script>
+
+</head>
+
+<body>
+    <main class="dashboard immigrant-dashboard">
+
+        <!-- Menu Sidebar Starts -->
+        <aside>
+            <div class="logo-box">
+                <a href="immigrant-dashboard.html"><img src="assets/images/logo.png" class="img-fluid"></a>
+            </div>
+
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="immigrant-dashboard.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-home.png" class="img-fluid">
+                        </div>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="approval-request.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-verified.png" class="img-fluid">
+                        </div>
+                        Approval Request
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="immigrant-setting.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-settings.png" class="img-fluid">
+                        </div>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="select-account.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-logout.png" class="img-fluid">
+                        </div>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- Menu Sidebar Ends -->
+
+        <!-- Daashboard Main Content Starts -->
+        <section class="dashboard-content">
+            <header>
+                <div class="logo-bar">
+                    <a href="immigrant-setting.html" class="logo"><img src="assets/images/logo.png"
+                            class="img-fluid"></a>
+                    <a class="btn sidebar-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="class">
+
+                    <a class="btn back-btn"><img src="assets/images/icon-left.png" class="img-fluid"></a>
+                    <div class="action-buttons">
+                        <a href="#" class="btn profile-button">
+                            <span class="info">
+                                <span class="title">Axiom Logistics</span>
+                                <span class="email">axiom@gmail.com</span>
+                            </span>
+                            <span class="image-wrapper">
+                                <img src="assets/images/user.png" class="img-fluid">
+                                <!-- AL -->
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="main-content">
+                <div class="content-wrapper">
+                    <div class="white-wrapper mx-2">
+                        <section class="approval-sec">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2 class="sec-hd">
+                                            Approval Requests
+                                        </h2>
+                                        <form action="" class="mt-4">
+                                            <div class="table-responsive approval-table">
+                                                <table class="table table-borderless">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>
+                                                                Sr No
+                                                            </th>
+                                                            <th>
+                                                                Request No
+                                                            </th>
+                                                            <th>
+                                                                Request Date
+                                                            </th>
+                                                            <th>
+                                                                Request Time
+                                                            </th>
+                                                            <th>
+                                                                Officer name
+                                                            </th>
+                                                            <th>
+                                                                Status
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>0</td>
+                                                            <td>03425557314</td>
+                                                            <td>06 Octuber,2021</td>
+                                                            <td>09:00 PM</td>
+                                                            <td>Amir Khan</td>
+                                                            <td>
+                                                                <div class="select-box">
+                                                                    <div class="options-container">
+                                                                        <div class="option bg-light-green">
+                                                                            <input type="radio" class="radio"
+                                                                                id="opt-approval-req-1"
+                                                                                name="approval-request-1" />
+                                                                            <label for="opt-approval-req-1"
+                                                                                class="text-bold approved selected-option">
+                                                                                Approved</label>
+                                                                        </div>
+                                                                        <div class="option bg-pink">
+                                                                            <input type="radio" class="radio"
+                                                                                id="opt-approval-req-2"
+                                                                                name="approval-request-1" />
+                                                                            <label for="opt-approval-req-2"
+                                                                                class="text-bold rejected selected-option">Rejected</label>
+                                                                        </div>
+                                                                        <div class="option bg-yellow">
+                                                                            <input type="radio" class="radio"
+                                                                                id="opt-approval-req-3"
+                                                                                name="approval-request-1" />
+                                                                            <label for="opt-approval-req-3"
+                                                                                class="text-bold pending selected-option">Pending</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="selected selected-wrapper bg-light-green">
+                                                                        Approved
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>0</td>
+                                                            <td>03425557314</td>
+                                                            <td>06 Octuber,2021</td>
+                                                            <td>09:00 PM</td>
+                                                            <td>Amir Khan</td>
+                                                            <td>
+                                                                <div class="select-box">
+                                                                    <div class="options-container">
+                                                                        <div class="option bg-light-green">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-1" name="category-events" />
+                                                                            <label for="attire-1"
+                                                                                class="text-bold selected-option">
+                                                                                Approved</label>
+                                                                        </div>
+                                                                        <div class="option bg-pink">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-2" name="category-events" />
+                                                                            <label for="attire-2"
+                                                                                class="text-bold selected-option">Rejected</label>
+                                                                        </div>
+                                                                        <div class="option bg-yellow">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-3" name="category-events" />
+                                                                            <label for="attire-3"
+                                                                                class="text-bold selected-option">Pending</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="selected selected-wrapper bg-light-green">
+                                                                        Approved
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>0</td>
+                                                            <td>03425557314</td>
+                                                            <td>06 Octuber,2021</td>
+                                                            <td>09:00 PM</td>
+                                                            <td>Amir Khan</td>
+                                                            <td>
+                                                                <div class="select-box">
+                                                                    <div class="options-container">
+                                                                        <div class="option bg-light-green">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-1" name="category-events" />
+                                                                            <label for="attire-1"
+                                                                                class="text-bold selected-option">
+                                                                                Approved</label>
+                                                                        </div>
+                                                                        <div class="option bg-pink">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-2" name="category-events" />
+                                                                            <label for="attire-2"
+                                                                                class="text-bold selected-option">Rejected</label>
+                                                                        </div>
+                                                                        <div class="option bg-yellow">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-3" name="category-events" />
+                                                                            <label for="attire-3"
+                                                                                class="text-bold selected-option">Pending</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="selected selected-wrapper bg-light-green">
+                                                                        Approved
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>0</td>
+                                                            <td>03425557314</td>
+                                                            <td>06 Octuber,2021</td>
+                                                            <td>09:00 PM</td>
+                                                            <td>Amir Khan</td>
+                                                            <td>
+                                                                <div class="select-box">
+                                                                    <div class="options-container">
+                                                                        <div class="option bg-light-green">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-1" name="category-events" />
+                                                                            <label for="attire-1"
+                                                                                class="text-bold selected-option">
+                                                                                Approved</label>
+                                                                        </div>
+                                                                        <div class="option bg-pink">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-2" name="category-events" />
+                                                                            <label for="attire-2"
+                                                                                class="text-bold selected-option">Rejected</label>
+                                                                        </div>
+                                                                        <div class="option bg-yellow">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-3" name="category-events" />
+                                                                            <label for="attire-3"
+                                                                                class="text-bold selected-option">Pending</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="selected selected-wrapper bg-light-green">
+                                                                        Approved
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>0</td>
+                                                            <td>03425557314</td>
+                                                            <td>06 Octuber,2021</td>
+                                                            <td>09:00 PM</td>
+                                                            <td>Amir Khan</td>
+                                                            <td>
+                                                                <div class="select-box">
+                                                                    <div class="options-container">
+                                                                        <div class="option bg-light-green">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-1" name="category-events" />
+                                                                            <label for="attire-1"
+                                                                                class="text-bold selected-option">
+                                                                                Approved</label>
+                                                                        </div>
+                                                                        <div class="option bg-pink">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-2" name="category-events" />
+                                                                            <label for="attire-2"
+                                                                                class="text-bold selected-option">Rejected</label>
+                                                                        </div>
+                                                                        <div class="option bg-yellow">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-3" name="category-events" />
+                                                                            <label for="attire-3"
+                                                                                class="text-bold selected-option">Pending</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="selected selected-wrapper bg-light-green">
+                                                                        Approved
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>0</td>
+                                                            <td>03425557314</td>
+                                                            <td>06 Octuber,2021</td>
+                                                            <td>09:00 PM</td>
+                                                            <td>Amir Khan</td>
+                                                            <td>
+                                                                <div class="select-box">
+                                                                    <div class="options-container">
+                                                                        <div class="option bg-light-green">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-1" name="category-events" />
+                                                                            <label for="attire-1"
+                                                                                class="text-bold selected-option">
+                                                                                Approved</label>
+                                                                        </div>
+                                                                        <div class="option bg-pink">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-2" name="category-events" />
+                                                                            <label for="attire-2"
+                                                                                class="text-bold selected-option">Rejected</label>
+                                                                        </div>
+                                                                        <div class="option bg-yellow">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-3" name="category-events" />
+                                                                            <label for="attire-3"
+                                                                                class="text-bold selected-option">Pending</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="selected selected-wrapper bg-light-green">
+                                                                        Approved
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>0</td>
+                                                            <td>03425557314</td>
+                                                            <td>06 Octuber,2021</td>
+                                                            <td>09:00 PM</td>
+                                                            <td>Amir Khan</td>
+                                                            <td>
+                                                                <div class="select-box">
+                                                                    <div class="options-container">
+                                                                        <div class="option bg-light-green">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-1" name="category-events" />
+                                                                            <label for="attire-1"
+                                                                                class="text-bold selected-option">
+                                                                                Approved</label>
+                                                                        </div>
+                                                                        <div class="option bg-pink">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-2" name="category-events" />
+                                                                            <label for="attire-2"
+                                                                                class="text-bold selected-option">Rejected</label>
+                                                                        </div>
+                                                                        <div class="option bg-yellow">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-3" name="category-events" />
+                                                                            <label for="attire-3"
+                                                                                class="text-bold selected-option">Pending</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="selected selected-wrapper bg-light-green">
+                                                                        Approved
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>0</td>
+                                                            <td>03425557314</td>
+                                                            <td>06 Octuber,2021</td>
+                                                            <td>09:00 PM</td>
+                                                            <td>Amir Khan</td>
+                                                            <td>
+                                                                <div class="select-box">
+                                                                    <div class="options-container">
+                                                                        <div class="option bg-light-green">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-1" name="category-events" />
+                                                                            <label for="attire-1"
+                                                                                class="text-bold selected-option">
+                                                                                Approved</label>
+                                                                        </div>
+                                                                        <div class="option bg-pink">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-2" name="category-events" />
+                                                                            <label for="attire-2"
+                                                                                class="text-bold selected-option">Rejected</label>
+                                                                        </div>
+                                                                        <div class="option bg-yellow">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-3" name="category-events" />
+                                                                            <label for="attire-3"
+                                                                                class="text-bold selected-option">Pending</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="selected selected-wrapper bg-light-green">
+                                                                        Approved
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>0</td>
+                                                            <td>03425557314</td>
+                                                            <td>06 Octuber,2021</td>
+                                                            <td>09:00 PM</td>
+                                                            <td>Amir Khan</td>
+                                                            <td>
+                                                                <div class="select-box">
+                                                                    <div class="options-container">
+                                                                        <div class="option bg-light-green">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-1" name="category-events" />
+                                                                            <label for="attire-1"
+                                                                                class="text-bold selected-option">
+                                                                                Approved</label>
+                                                                        </div>
+                                                                        <div class="option bg-pink">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-2" name="category-events" />
+                                                                            <label for="attire-2"
+                                                                                class="text-bold selected-option">Rejected</label>
+                                                                        </div>
+                                                                        <div class="option bg-yellow">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-3" name="category-events" />
+                                                                            <label for="attire-3"
+                                                                                class="text-bold selected-option">Pending</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="selected selected-wrapper bg-light-green">
+                                                                        Approved
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>0</td>
+                                                            <td>03425557314</td>
+                                                            <td>06 Octuber,2021</td>
+                                                            <td>09:00 PM</td>
+                                                            <td>Amir Khan</td>
+                                                            <td>
+                                                                <div class="select-box">
+                                                                    <div class="options-container">
+                                                                        <div class="option bg-light-green">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-1" name="category-events" />
+                                                                            <label for="attire-1"
+                                                                                class="text-bold selected-option">
+                                                                                Approved</label>
+                                                                        </div>
+                                                                        <div class="option bg-pink">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-2" name="category-events" />
+                                                                            <label for="attire-2"
+                                                                                class="text-bold selected-option">Rejected</label>
+                                                                        </div>
+                                                                        <div class="option bg-yellow">
+                                                                            <input type="radio" class="radio"
+                                                                                id="attire-3" name="category-events" />
+                                                                            <label for="attire-3"
+                                                                                class="text-bold selected-option">Pending</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="selected selected-wrapper bg-light-green">
+                                                                        Approved
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Daashboard Main Content Ends -->
+    </main>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/custom-js.js"></script>
+
+    <script>
+        AOS.init();
+
+        $(document).ready(function () {
+            $('.sidebar-trigger').click(function () {
+                $('aside').toggleClass('show');
+            })
+        });
+    </script>
+</body>
+
+</html>

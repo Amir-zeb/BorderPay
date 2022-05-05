@@ -1,0 +1,29 @@
+
+@font-face {
+    font-family: "sf-pro";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(./sf-pro/sf-pro-light.ttf);
+}
+@font-face {
+    font-family: "sf-pro";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./sf-pro/sf-pro-regular.OTF);
+}
+@font-face {
+    font-family: "sf-pro";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(./sf-pro/sf-pro-medium.OTF);
+}
+@font-face {
+    font-family: "sf-pro";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./sf-pro/sf-pro-bold.OTF);
+}

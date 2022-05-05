@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/images/favicon.png" type="image/png" rel="icon">
+    <title>Settings | Immigrant Dashboard</title>
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style-dashboard.css?=0.1">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <!-- jQuery Files -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+
+    <!-- Custom Fonts -->
+    <link href="assets/css/sf-pro-fonts.css?family=sf-pro:400,500,700&display=swap" rel="stylesheet" />
+
+    <!-- Fonts Icons -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/solid.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <script src="assets/js/aos.js"></script>
+
+</head>
+
+<body>
+    <main class="dashboard immigrant-dashboard">
+
+        <!-- Menu Sidebar Starts -->
+        <aside>
+            <div class="logo-box">
+                <a href="immigrant-dashboard.html"><img src="assets/images/logo.png" class="img-fluid"></a>
+            </div>
+
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="immigrant-dashboard.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-home.png" class="img-fluid">
+                        </div>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="approval-request.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-verified.png" class="img-fluid">
+                        </div>
+                        Approval Requests
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="immigrant-setting.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-settings.png" class="img-fluid">
+                        </div>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="select-account.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-logout.png" class="img-fluid">
+                        </div>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- Menu Sidebar Ends -->
+
+        <!-- Daashboard Main Content Starts -->
+        <section class="dashboard-content">
+            <header>
+                <div class="logo-bar">
+                    <a href="immigrant-dashboard.html" class="logo"><img src="assets/images/logo.png"
+                            class="img-fluid"></a>
+                    <a class="btn sidebar-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="class">
+
+                    <a class="btn back-btn"><img src="assets/images/icon-left.png" class="img-fluid"></a>
+                    <div class="action-buttons">
+                        <a href="#" class="btn profile-button">
+                            <span class="info">
+                                <span class="title">Axiom Logistics</span>
+                                <span class="email">axiom@gmail.com</span>
+                            </span>
+                            <span class="image-wrapper">
+                                <img src="assets/images/user.png" class="img-fluid">
+                                <!-- AL -->
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="main-content immigrant-home">
+                <div class="content-wrapper">
+                    <div class="white-wrapper mx-2">
+                        <section class="settings-sec">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2 class="sec-hd">
+                                            Settings
+                                        </h2>
+                                        <div class="tab-wrapper">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <button class="nav-link active" id="account_settings-tab"
+                                                        data-bs-toggle="tab" data-bs-target="#account_settings"
+                                                        type="button" role="tab" aria-controls="account_settings"
+                                                        aria-selected="true">
+                                                        <span>
+                                                            Account
+                                                            Settings
+                                                            <font>Edit Account Details</font>
+                                                        </span>
+                                                        <i class="fa fa-chevron-right"></i>
+                                                    </button>
+                                                    <button class="nav-link" id="security_settings-tab"
+                                                        data-bs-toggle="tab" data-bs-target="#security_settings"
+                                                        type="button" role="tab" aria-controls="security_settings"
+                                                        aria-selected="false">
+                                                        <span>Security
+                                                            Settings
+                                                            <font>Change Password</font>
+                                                        </span>
+                                                        <i class="fa fa-chevron-right"></i>
+                                                    </button>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="account_settings"
+                                                    role="tabpanel" aria-labelledby="account_settings-tab">
+                                                    <form action="">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="user-profile">
+                                                                    <div class="img-wrapper">
+                                                                        <img src="./assets/images/user-2.png" alt=""
+                                                                            class="img-fluid">
+                                                                        <div class="icon-wrapper">
+                                                                            <label for="image">
+                                                                                <input type="file" name="image"
+                                                                                    id="image" class="d-none" />
+                                                                                <img
+                                                                                    src="./assets/images/icon-camera.png" />
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-5 col-md-6 col-sm-12">
+                                                                <div class="legend-styled">
+                                                                    <label for="" class="legend">First Name</label>
+                                                                    <input type="text" name="" id=""
+                                                                        class="toggle-color">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 offset-lg-1 col-md-6 col-sm-12">
+                                                                <div class="legend-styled">
+                                                                    <label for="" class="legend">Last Name</label>
+                                                                    <input type="text" name="" id=""
+                                                                        class="toggle-color">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-5 col-md-6 col-sm-12">
+                                                                <div class="legend-styled">
+                                                                    <label for="" class="legend">Email Address</label>
+                                                                    <input type="email" name="" id=""
+                                                                        class="toggle-color">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 offset-lg-1 col-md-6 col-sm-12">
+                                                                <div class="legend-styled">
+                                                                    <label for="" class="legend">Phone Number</label>
+                                                                    <input type="tel" name="" id=""
+                                                                        class="toggle-color">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-sm-12">
+                                                                <div class="flex-box">
+                                                                    <input type="submit" value="Save changes"
+                                                                        class="common-btn bg-green">
+                                                                    <input type="reset" value="Reset changes"
+                                                                        class="common-btn green">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane fade" id="security_settings" role="tabpanel"
+                                                    aria-labelledby="security_settings-tab">
+                                                    <form action="">
+                                                        <h4 class="sec-hd">
+                                                            Change Password
+                                                        </h4>
+                                                        <div class="row">
+                                                            <div class="col-lg-5 col-md-6  col-sm-12">
+                                                                <div class="legend-styled">
+                                                                    <div class="group">
+                                                                        <label for="pass" class="legend">Current
+                                                                            Password</label>
+                                                                        <input type="password"
+                                                                            class="pass-input toggle-color" id="pass"
+                                                                            name="pass" required>
+                                                                        <div class="icon-wrapper eye-wrapper">
+                                                                            <i class="far fa-eye"></i>
+                                                                            <i class="far fa-eye-slash"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-5 col-md-6  col-sm-12">
+                                                                <div class="legend-styled">
+                                                                    <div class="group">
+                                                                        <label for="pass" class="legend">New
+                                                                            Password</label>
+                                                                        <input type="password"
+                                                                            class="pass-input toggle-color" id="pass"
+                                                                            name="pass" required>
+                                                                        <div class="icon-wrapper eye-wrapper">
+                                                                            <i class="far fa-eye"></i>
+                                                                            <i class="far fa-eye-slash"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-6 offset-lg-1 col-sm-12">
+                                                                <div class="legend-styled">
+                                                                    <div class="group">
+                                                                        <label for="pass" class="legend">Confirm
+                                                                            Password</label>
+                                                                        <input type="password"
+                                                                            class="pass-input toggle-color" id="pass"
+                                                                            name="pass" required>
+                                                                        <div class="icon-wrapper eye-wrapper">
+                                                                            <i class="far fa-eye"></i>
+                                                                            <i class="far fa-eye-slash"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-sm-12">
+                                                                <div class="flex-box">
+                                                                    <input type="submit" value="Save changes"
+                                                                        class="common-btn bg-green">
+                                                                    <input type="reset" value="Reset changes"
+                                                                        class="common-btn green">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Daashboard Main Content Ends -->
+    </main>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/custom-js.js"></script>
+
+    <script>
+        AOS.init();
+
+        $(document).ready(function () {
+            $('.sidebar-trigger').click(function () {
+                $('aside').toggleClass('show');
+            })
+        });
+    </script>
+</body>
+
+</html>

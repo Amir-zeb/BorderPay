@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/images/favicon.png" type="image/png" rel="icon">
+    <title>Company Protal</title>
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style-dashboard.css?v=0.1">
+
+    <!-- jQuery Files -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link href="assets/css/sf-pro-fonts.css?family=sf-pro:400,500,700&display=swap" rel="stylesheet" />
+
+    <!-- Fonts Icons -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/solid.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <script src="assets/js/aos.js"></script>
+
+</head>
+
+<body>
+    <main class="dashboard">
+
+        <!-- Menu Sidebar Starts -->
+        <aside>
+            <div class="logo-box">
+                <a href="companyportal-home.html"><img src="assets/images/logo.png" class="img-fluid"></a>
+            </div>
+
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="companyportal-home.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-home.png" class="img-fluid">
+                        </div>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="truck-drivers.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-truck.png" class="img-fluid">
+                        </div>
+                        Truck Drivers
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="support.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-support.png" class="img-fluid">
+                        </div>
+                        Support
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="companyportal-settings.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-settings.png" class="img-fluid">
+                        </div>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="companyportal-signIn(1).html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-logout.png" class="img-fluid">
+                        </div>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- Menu Sidebar Ends -->
+
+        <!-- Daashboard Main Content Starts -->
+        <section class="dashboard-content">
+            <header>
+                <div class="logo-bar">
+                    <a href="companyportal-home.html" class="logo"><img src="assets/images/logo.png"
+                            class="img-fluid"></a>
+                    <a class="btn sidebar-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="class">
+
+                    <a class="btn back-btn"><img src="assets/images/icon-left.png" class="img-fluid"></a>
+                    <div class="action-buttons">
+                        <a href="#" class="btn profile-button">
+                            <span class="info">
+                                <span class="title">Axiom Logistics</span>
+                                <span class="email">axiom@gmail.com</span>
+                            </span>
+                            <span class="image-wrapper">
+                                <img src="assets/images/user.png" class="img-fluid">
+                                <!-- AL -->
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="main-content company-portal home-page">
+                <div class="content-wrapper">
+                    <div class="heading-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5 class="sec-hd mb-2">
+                                        Company Portal
+                                    </h5>
+                                    <p>Welcome Axiom Logistics,</p>
+                                    <h5 class="sec-hd">
+                                        Analytics
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blank-wrapper">
+                        <section class="home-top-sec">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="flex-box outer1">
+                                            <div class="box box__shadow">
+                                                <div class="flex-box inner">
+                                                    <div class="boxes">
+                                                        <h4>30</h4>
+                                                        <p>No of Truck Drivers</p>
+                                                    </div>
+                                                    <div class="boxes">
+                                                        <h4>125</h4>
+                                                        <p>Transactions in the last month</p>
+                                                    </div>
+                                                    <div class="boxes">
+                                                        <h4>AED 1,900</h4>
+                                                        <p>Total Payment in the last month</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a data-bs-toggle="modal" data-bs-target="#driver_form"
+                                                class="box box__shadow" style="cursor: pointer;">
+                                                <div class="img-wrapper">
+                                                    <img src="./assets/images/icon-users.png" alt="" class="img-fluid">
+                                                </div>
+                                                <p>Add new Truck Driver</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+
+                    <!-- <div class="heading-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5 class="sec-hd">
+                                        Most Active Accounts
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="blank-wrapper">
+                        <div class="container">
+                            <div class="flex-box outer2">
+                                <div class="section-box">
+                                    <section class="truck-driver">
+                                        <div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="sec-hd mt-4">
+                                                        Most Active Accounts
+                                                    </h4>
+                                                    <div class="table-responsive cp-styled-table">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Driver ID</th>
+                                                                    <th>Driver Name</th>
+                                                                    <th>Driving License Number</th>
+                                                                    <th></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        0
+                                                                    </td>
+                                                                    <td>
+                                                                        80846054374
+                                                                    </td>
+                                                                    <td>
+                                                                        Imran Khan
+                                                                    </td>
+                                                                    <td>420420</td>
+                                                                    <td>
+                                                                        <a href="driver-profile.html">
+                                                                            <img src="./assets/images/long-arrow.png"
+                                                                                alt="" class="img-fluid">
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        0
+                                                                    </td>
+                                                                    <td>
+                                                                        80846054374
+                                                                    </td>
+                                                                    <td>
+                                                                        Imran Khan
+                                                                    </td>
+                                                                    <td>420420</td>
+                                                                    <td>
+                                                                        <a href="driver-profile.html">
+                                                                            <img src="./assets/images/long-arrow.png"
+                                                                                alt="" class="img-fluid">
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        0
+                                                                    </td>
+                                                                    <td>
+                                                                        80846054374
+                                                                    </td>
+                                                                    <td>
+                                                                        Imran Khan
+                                                                    </td>
+                                                                    <td>420420</td>
+                                                                    <td>
+                                                                        <a href="driver-profile.html">
+                                                                            <img src="./assets/images/long-arrow.png"
+                                                                                alt="" class="img-fluid">
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        0
+                                                                    </td>
+                                                                    <td>
+                                                                        80846054374
+                                                                    </td>
+                                                                    <td>
+                                                                        Imran Khan
+                                                                    </td>
+                                                                    <td>420420</td>
+                                                                    <td>
+                                                                        <a href="driver-profile.html">
+                                                                            <img src="./assets/images/long-arrow.png"
+                                                                                alt="" class="img-fluid">
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        0
+                                                                    </td>
+                                                                    <td>
+                                                                        80846054374
+                                                                    </td>
+                                                                    <td>
+                                                                        Imran Khan
+                                                                    </td>
+                                                                    <td>420420</td>
+                                                                    <td>
+                                                                        <a href="driver-profile.html">
+                                                                            <img src="./assets/images/long-arrow.png"
+                                                                                alt="" class="img-fluid">
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        0
+                                                                    </td>
+                                                                    <td>
+                                                                        80846054374
+                                                                    </td>
+                                                                    <td>
+                                                                        Imran Khan
+                                                                    </td>
+                                                                    <td>420420</td>
+                                                                    <td>
+                                                                        <a href="driver-profile.html">
+                                                                            <img src="./assets/images/long-arrow.png"
+                                                                                alt="" class="img-fluid">
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        0
+                                                                    </td>
+                                                                    <td>
+                                                                        80846054374
+                                                                    </td>
+                                                                    <td>
+                                                                        Imran Khan
+                                                                    </td>
+                                                                    <td>420420</td>
+                                                                    <td>
+                                                                        <a href="driver-profile.html">
+                                                                            <img src="./assets/images/long-arrow.png"
+                                                                                alt="" class="img-fluid">
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        0
+                                                                    </td>
+                                                                    <td>
+                                                                        80846054374
+                                                                    </td>
+                                                                    <td>
+                                                                        Imran Khan
+                                                                    </td>
+                                                                    <td>420420</td>
+                                                                    <td>
+                                                                        <a href="driver-profile.html">
+                                                                            <img src="./assets/images/long-arrow.png"
+                                                                                alt="" class="img-fluid">
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        0
+                                                                    </td>
+                                                                    <td>
+                                                                        80846054374
+                                                                    </td>
+                                                                    <td>
+                                                                        Imran Khan
+                                                                    </td>
+                                                                    <td>420420</td>
+                                                                    <td>
+                                                                        <a href="driver-profile.html">
+                                                                            <img src="./assets/images/long-arrow.png"
+                                                                                alt="" class="img-fluid">
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="section-box">
+                                    <div class="box box__shadow">
+                                        <div class="img-wrapper">
+                                            <img src="./assets/images/icon-wallet.png" alt="" class="img-fluid">
+                                        </div>
+                                        <h4>AED 2,600</h4>
+                                        <p>Company Wallet Balance</p>
+                                    </div>
+                                    <a href="top-up.html" class="common-btn bg-green">Top up</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="driver_form" tabindex="-1" aria-labelledby="driver_formLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="driver_formLabel">Add new truck driver</h5>
+                                    <span data-bs-dismiss="modal" class="close-modal" aria-label="Close">&times;</span>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <div class="row mb-3">
+                                            <div class="col-6">
+                                                <div class="legend-styled">
+                                                    <label for="" class="legend">FirstName</label>
+                                                    <input type="text" id="" class="toggle-color" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="legend-styled">
+                                                    <label for="" class="legend">LastName</label>
+                                                    <input type="text" id="" class="toggle-color" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-6">
+                                                <div class="legend-styled">
+                                                    <label for="" class="legend">Email</label>
+                                                    <input type="email" id="" class="toggle-color" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="legend-styled">
+                                                    <div class="group">
+                                                        <label for="pass" class="legend">Password</label>
+                                                        <input type="password" class="pass-input toggle-color" id="pass"
+                                                            name="pass">
+                                                        <div class="icon-wrapper eye-wrapper">
+                                                            <i class="far fa-eye"></i>
+                                                            <i class="far fa-eye-slash"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-6">
+                                                <div class="legend-styled">
+                                                    <label for="" class="legend">Country</label>
+                                                    <input type="text" id="" class="toggle-color" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="legend-styled">
+                                                    <label for="" class="legend">Phone Number</label>
+                                                    <input type="text" id="" class="toggle-color" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-6">
+                                                <div class="legend-styled">
+                                                    <label for="" class="legend">Truck Number</label>
+                                                    <input type="text" id="" class="toggle-color" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="legend-styled">
+                                                    <label for="" class="legend">License Number</label>
+                                                    <input type="text" id="" class="toggle-color" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <input type="submit" value="Submit"
+                                                    class="bg-green common-btn ms-auto me-2">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Daashboard Main Content Ends -->
+    </main>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/custom-js.js"></script>
+
+    <script>
+        AOS.init();
+
+        $(document).ready(function () {
+            $('.sidebar-trigger').click(function () {
+                $('aside').toggleClass('show');
+            })
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/images/favicon.png" type="image/png" rel="icon">
+    <title>Edit Details | Immigrant Dashboard</title>
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style-dashboard.css?=0.1">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <!-- jQuery Files -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+
+    <!-- Custom Fonts -->
+    <link href="assets/css/sf-pro-fonts.css?family=sf-pro:400,500,700&display=swap" rel="stylesheet" />
+
+    <!-- Fonts Icons -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/solid.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <script src="assets/js/aos.js"></script>
+
+</head>
+
+<body>
+    <main class="dashboard immigrant-dashboard">
+
+        <!-- Menu Sidebar Starts -->
+        <aside>
+            <div class="logo-box">
+                <a href="immigrant-dashboard.html"><img src="assets/images/logo.png" class="img-fluid"></a>
+            </div>
+
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="immigrant-dashboard.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-home.png" class="img-fluid">
+                        </div>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="approval-request.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-verified.png" class="img-fluid">
+                        </div>
+                        Approval Requests
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="immigrant-setting.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-settings.png" class="img-fluid">
+                        </div>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="select-account.html">
+                        <div class="icon-box">
+                            <img src="assets/images/icon-logout.png" class="img-fluid">
+                        </div>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- Menu Sidebar Ends -->
+
+        <!-- Daashboard Main Content Starts -->
+        <section class="dashboard-content">
+            <header>
+                <div class="logo-bar">
+                    <a href="immigrant-dashboard.html" class="logo"><img src="assets/images/logo.png"
+                            class="img-fluid"></a>
+                    <a class="btn sidebar-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="class">
+
+                    <a class="btn back-btn"><img src="assets/images/icon-left.png" class="img-fluid"></a>
+                    <div class="action-buttons">
+                        <a href="#" class="btn profile-button">
+                            <span class="info">
+                                <span class="title">Axiom Logistics</span>
+                                <span class="email">axiom@gmail.com</span>
+                            </span>
+                            <span class="image-wrapper">
+                                <img src="assets/images/user.png" class="img-fluid">
+                                <!-- AL -->
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="main-content immigrant-home">
+                <div class="content-wrapper">
+                    <div class="white-wrapper mx-2">
+                        <section class="edit-detials-sec">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4 class="sec-hd">Edit Details</h4>
+                                        <h5>This Vouchar is currently valid for 5 people.</h5>
+                                        <p>How many people do you want it to valid for now?</p>
+                                        <form action="">
+                                            <div class="legend-styled">
+                                                <input type="text" name="" id="">
+                                            </div>
+                                            <a data-bs-toggle="modal" data-bs-target="#peopleBeenRemovedPopUp"
+                                                class="common-btn bg-green">Continue</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- People Been Removed POPUP -->
+                    <!-- Modal -->
+                    <div class="modal fade pending-modal custom-modal" id="peopleBeenRemovedPopUp" tabindex="-1"
+                        aria-labelledby="peopleBeenRemovedPopUpLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="./assets/images/info-icon-white.png" alt="">
+                                    <span data-bs-dismiss="modal" class="close-modal" aria-label="Close">&times;</span>
+                                </div>
+                                <div class="modal-body">
+                                    <h4 class="green"><span>2</span> people have been chosen to be removed.</h4>
+                                    <p>Do you want to proceed?</p>
+                                    <a href="edit-details(2).html" class="common-btn">Continue</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Daashboard Main Content Ends -->
+    </main>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/custom-js.js"></script>
+
+    <script>
+        AOS.init();
+
+        $(document).ready(function () {
+            $('.sidebar-trigger').click(function () {
+                $('aside').toggleClass('show');
+            })
+        });
+    </script>
+</body>
+
+</html>
